@@ -1,0 +1,37 @@
+<mvc:View controllerName="com.yash.assignment-4.controller.View2" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="shipmentIdVerification" title="{i18n>title}">
+					<content>
+						<VBox justifyContent="Center" alignItems="Center" height="100%" width="100%" backgroundDesign="Solid">
+							<VBox justifyContent="Start" alignItems="Start">
+								<HBox>
+									<Text id="shipmentIDVerificationInst" text="{i18n>shipmentIDVerificationInst}"/>
+								</HBox>
+								<HBox>
+									<Text id="shipmentNumberInst" text="{i18n>shipmentNumberInst}"/>
+								</HBox>
+								<HBox class="sapUiMediumMarginTop">
+									<Text id="shipmentIdText" class="sapUiSmallMarginEnd" text="{i18n>shipmentIdText}"/>
+									<Input id="shipmentIdInput" editable="true"/>
+								</HBox>
+							</VBox>
+								<HBox class="sapUiMediumMarginTop">
+									<Button id="shipmentContinueButton" press=".onShipmentContinueButtonPress" type="Emphasized" class="sapUiSmallMarginEnd" text="{i18n>shipmentContinueButton}"/>
+									<Button id="noShipmentIDButton" press=".onNoShipmentIDButtonPress" type="Emphasized" text="{i18n>noShipmentIDButton}"/>
+								</HBox>
+								<HBox>
+									<Button id="backToHomeButton" press=".onBackToHomeButtonPress" type="Emphasized" class="sapUiSmallMarginEnd sapUiMediumMarginTop" text="{i18n>backToHomeButton}"/>
+								</HBox>
+								<HBox>
+									<Button id="requestHelpButton" press=".onRequestHelpButtonPress" type="Emphasized" text="{i18n>requestHelpButton}"/>
+								</HBox>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,17 @@
+<mvc:View controllerName="com.yash.assignment-4.controller.View3" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="InvalidShipmentId" title="{i18n>title}">
+					<content>
+						<VBox justifyContent="Center" alignItems="Center" height="100%" width="100%" backgroundDesign="Solid">
+							<Text id="invalidShipmentIdInst" text="{i18n>invalidShipmentIdInst}"/>
+							<Button id="beckShipmentIdVerification" press=".onBeckShipmentIdVerificationPress" type="Emphasized" class="sapUiSmallMarginEnd sapUiSmallMarginTop" text="{i18n>beckShipmentIdVerification}"/>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.yash.assignment-4.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="Home" title="{i18n>title}">
+					<content>
+						<VBox justifyContent="Center" alignItems="Center" height="100%" width="100%" backgroundDesign="Solid">
+							<Text id="welcome" text="{i18n>welcome}"/>
+							<Text id="checkinInstruction" text="{i18n>checkinInstruction}"/>
+							<HBox class="sapUiSmallMarginTop" justifyContent="Center" alignItems="Center">
+								<Button id="pickingButton" press="onPickingButtonPress" type="Emphasized" class="sapUiSmallMarginEnd" text="{i18n>pickingButton}"/>
+								<Button id="droppingButton" press="onDroppingButtonPress" type="Emphasized" text="{i18n>droppingButton}"/>
+							</HBox>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,32 @@
+<mvc:View controllerName="com.yash.assignment-4.controller.View5" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="RequestHelp" title="{i18n>title}">
+					<content>
+						<VBox justifyContent="Center" alignItems="Center" height="100%" width="100%" backgroundDesign="Solid">
+							<Text id="requestHelpInst" text="{i18n>requestHelpInst}"/>
+							<VBox justifyContent="Start" alignItems="Start" class="sapUiMediumMarginTop" >
+								<HBox>
+									<Text id="requestHelpDetailTiming1" class="sapUiMediumMarginEnd" text="{i18n>requestHelpDetailTiming1}"/>
+									<Text id="requestHelpDetailPhone1" text="{i18n>requestHelpDetailPhone1}"/>
+								</HBox>
+								<HBox>
+									<Text id="requestHelpDetailTiming2" class="sapUiMediumMarginEnd" text="{i18n>requestHelpDetailTiming2}"/>
+									<Text id="requestHelpDetailPhone2" text="{i18n>requestHelpDetailPhone2}"/>
+								</HBox>
+								<HBox>
+									<Text id="requestHelpDetailTiming3" class="sapUiMediumMarginEnd" text="{i18n>requestHelpDetailTiming3}"/>
+									<Text id="requestHelpDetailPhone3" text="{i18n>requestHelpDetailPhone3}"/>
+								</HBox>
+							</VBox>
+							<Button id="beckShipmentIdVerification" press=".onBeckShipmentIdVerificationPress" type="Emphasized"
+								class="sapUiSmallMarginEnd sapUiSmallMarginTop" text="{i18n>beckShipmentIdVerification}"/>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
